@@ -1,6 +1,8 @@
 BUILD
 __pycache__
 .mbed
+mbed-os
+mbed-VL53L1X-ULD
 custom_targets.json
 TARGET_ELTEN_SMARTASTIC
 
