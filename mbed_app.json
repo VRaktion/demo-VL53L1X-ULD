@@ -1,0 +1,29 @@
+{
+    "requires": [
+        "bare-metal",
+        "events",
+        "drivers",
+        "ble",
+        "cordio",
+        "cordio-ll",
+        "cordio-nordic-ll",
+        "mbed-trace",
+        "mbedtls"
+    ],
+    "target_overrides": {
+        "*": {
+            "events.use-lowpower-timer-ticker": true,
+            "platform.cpu-stats-enabled": 0,
+            "platform.stdio-buffered-serial": 0,
+            "platform.stdio-flush-at-exit": false,
+            "target.console-uart": true,
+            "target.c_lib": "small",
+            "platform.stdio-baud-rate": 115200
+        },
+        "ELTEN_SMARTASTIC": {
+            "target.features_add": [
+                "BLE"
+            ]
+        }
+    }
+}

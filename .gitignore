@@ -1,0 +1,6 @@
+BUILD
+__pycache__
+.mbed
+custom_targets.json
+TARGET_ELTEN_SMARTASTIC
+
